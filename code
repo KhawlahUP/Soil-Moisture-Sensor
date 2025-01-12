@@ -1,0 +1,76 @@
+
+// RemoteXY select connection mode and include library 
+#define REMOTEXY_MODE__ESP8266WIFI_LIB_POINT
+#include <ESP8266WiFi.h>
+
+#include <RemoteXY.h>
+
+// RemoteXY connection settings 
+#define REMOTEXY_WIFI_SSID "sensor"
+#define REMOTEXY_WIFI_PASSWORD "12345678"
+#define REMOTEXY_SERVER_PORT 6377
+
+// RemoteXY configurate  
+#pragma pack(push, 1)
+	
+uint8_t RemoteXY_CONF[] =   // 30 bytes
+  { 255,0,0,2,0,23,0,16,28,1,69,0,20,48,21,21,8,129,0,23,
+  17,18,6,17,76,97,98,101,108,0 };
+	2
+  
+// this structure defines all the variables and events of your control interface 
+struct {
+
+    // output variables
+  int16_t sound_1; // =0 no sound, else ID of sound, =1001 for example, look sound list in app 
+
+
+
+
+
+
+    // other variable
+  uint8_t connect_flag;  // =1 if wire connected, else =0 
+
+} RemoteXY;
+#pragma pack(pop)
+
+/////////////////////////////////////////////
+//           END RemoteXY include          //
+/////////////////////////////////////////////
+
+int x=0;
+
+void setup() 
+{
+  RemoteXY_Init (); 
+
+  pinMode(D0,INPUT);
+  
+  // TODO you setup code
+  
+}
+
+void loop()
+{ 
+  RemoteXY_Handler ();	
+
+   x=digitalRead(D0);
+  
+  if (digitalRead(x) == HIGH) {   
+  RemoteXY.sound_1 = 1001;
+}
+		3
+	
+else {
+  RemoteXY.sound_1 = 0;
+}
+  // TODO you loop code
+  // use the RemoteXY structure for data transfer
+  // do not call delay() 
+
+
+}
+
+
+
