@@ -1,6 +1,7 @@
 # Soil-Moisture-Sensor
 
-![Project Image](images/your-image.png)  
+![Soil moisture sensors](https://github.com/user-attachments/assets/0e114866-4ff7-47ea-9df4-eec0171d2d79)
+  
 
 ## Introduction  
 
