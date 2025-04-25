@@ -1,22 +1,26 @@
-# Soil-Moisture-Sensor
+# Soil Moisture Sensor Project
 
-![Soil moisture sensors](https://github.com/user-attachments/assets/0e114866-4ff7-47ea-9df4-eec0171d2d79)
-  
+A simple system to monitor soil moisture levels using an Arduino and a soil moisture sensor.
 
-## Introduction  
+## 🌱 Features
+- Monitor soil moisture in real-time.
+- Send alerts when soil moisture is too low.
+- Data logging for moisture levels over time.
 
-This project utilizes the ESP8266 with the RemoteXY library to create a remote control interface for monitoring soil moisture levels. It can be used to trigger alerts based on the moisture sensor readings.  
+## ⚙️ Setup Instructions
+1. Connect the soil moisture sensor to the Arduino as per the wiring diagram.
+2. Upload the Arduino code to your board.
+3. Open the serial monitor to see the moisture readings.
 
-## Requirements  
+## 🔧 Requirements
+- Arduino IDE
+- Soil Moisture Sensor
+- Arduino Board (e.g., Uno)
 
-- ESP8266  
-- ESP8266WiFi library  
-- RemoteXY library  
+## 📸 Demo
 
-## Setup  
+![Soil Moisture Sensor]("C:\Users\khawl\Soil-Moisture-Sensors\Soil moisture sensors.jpg")
 
-1. Install the required libraries via the Arduino IDE.  
-2. Modify the WiFi settings in the code:  
-   ```cpp  
-   #define REMOTEXY_WIFI_SSID "sensor"  
-   #define REMOTEXY_WIFI_PASSWORD "12345678"
+## 🚀 Future Improvements
+- Integrate with an app to send notifications to the user's phone.
+- Implement automated irrigation system based on moisture levels.
