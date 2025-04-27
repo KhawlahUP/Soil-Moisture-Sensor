@@ -1,0 +1,46 @@
+// RemoteXY select connection mode and include library 
+#define REMOTEXY_MODE__ESP8266WIFI_LIB_POINT
+#include <ESP8266WiFi.h>
+#include <RemoteXY.h>
+
+// RemoteXY connection settings 
+#define REMOTEXY_WIFI_SSID "sensor"
+#define REMOTEXY_WIFI_PASSWORD "12345678"
+#define REMOTEXY_SERVER_PORT 6377
+
+// RemoteXY configurate  
+#pragma pack(push, 1)
+uint8_t RemoteXY_CONF[] = { 
+  255,0,0,2,0,23,0,16,28,1,69,0,20,48,21,21,8,129,0,23,
+  17,18,6,17,76,97,98,101,108,0
+};
+
+// this structure defines all the variables and events of your control interface 
+struct {
+    int16_t sound_1; // =0 no sound, else ID of sound
+    uint8_t connect_flag;  // =1 if wire connected, else =0 
+} RemoteXY;
+#pragma pack(pop)
+
+/////////////////////////////////////////////
+//           END RemoteXY include          //
+/////////////////////////////////////////////
+
+int sensorValue = 0;
+
+void setup() {
+  RemoteXY_Init();
+  pinMode(D0, INPUT);  // D0 موصول مع حساس الرطوبة
+}
+
+void loop() { 
+  RemoteXY_Handler();
+  
+  sensorValue = digitalRead(D0);
+  
+  if (sensorValue == HIGH) {   
+    RemoteXY.sound_1 = 1001; // تشغيل صوت تنبيه
+  } else {
+    RemoteXY.sound_1 = 0;    // لا يوجد صوت
+  }
+}
