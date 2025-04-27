@@ -3,7 +3,7 @@
 A simple IoT project to monitor plant soil moisture using a soil moisture sensor, NodeMCU ESP8266 board, and the RemotXY mobile application.
 
 <p align="center">
-  <img src="images/Soil Moisture Sensor.png" alt="Project Main Image" width="500"/>
+  <img src="images/Soil Moisture Sensor.jpg" alt="Project Main Image" width="500"/>
 </p>
 
 ## Project Description:
@@ -35,10 +35,6 @@ A simple IoT project to monitor plant soil moisture using a soil moisture sensor
 - Upload the provided Arduino sketch (PlantMoistureMonitor.ino) to the NodeMCU board.
 - Connect to the Wi-Fi access point created by NodeMCU (sensor, password 12345678).
 - Open the RemotXY app and connect to the device to monitor soil moisture.
-
-## Project Preview:
-
-![Wiring Diagram](images/wiring_diagram.png)
 
 ## 📹 Demo video of the project
 
