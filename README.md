@@ -2,6 +2,10 @@
 
 A simple IoT project to monitor plant soil moisture using a soil moisture sensor, NodeMCU ESP8266 board, and the RemotXY mobile application.
 
+<p align="center">
+  <img src="images/Soil Moisture Sensor.png" alt="Project Main Image" width="500"/>
+</p>
+
 ## Project Description:
 - Monitor the soil's moisture status (wet or dry) in real-time.
 - Send an audio notification to the smartphone via the RemotXY app if the soil is dry.
