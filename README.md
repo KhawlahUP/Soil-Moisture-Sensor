@@ -47,29 +47,29 @@ A simple IoT project to monitor plant soil moisture using a soil moisture sensor
   <tr>
     <td align="center">
       <strong>IR Flame Sensor</strong><br>
-      <img src="images/ir_flame_sensor.jpg" width="180"><br>
+      <img src="images/IR Flame Sensor.png" width="180"><br>
       Detects flame signals for fire monitoring.
     </td>
     <td align="center">
       <strong>Soil Moisture Water Sensor</strong><br>
-      <img src="images/soil_moisture_water_sensor.jpg" width="180"><br>
+      <img src="images/Soil Moisture Water Sensor.png" width="180"><br>
       Measures soil moisture levels accurately.
     </td>
     <td align="center">
       <strong>The NodeMCU</strong><br>
-      <img src="images/nodemcu.jpg" width="180"><br>
+      <img src="images/The NodeMCU.png" width="180"><br>
       Wi-Fi enabled microcontroller board.
     </td>
   </tr>
   <tr>
     <td align="center">
       <strong>Soil Moisture Sensor</strong><br>
-      <img src="images/soil_moisture_sensor.jpg" width="180"><br>
+      <img src="images/Soil Moisture Sensor.png" width="180"><br>
       Soil sensor connected to NodeMCU.
     </td>
     <td align="center">
       <strong>Connects to RemoteXY</strong><br>
-      <img src="images/connects_to_remotexy.jpg" width="180"><br>
+      <img src="images/connects to RemoteXY.png" width="180"><br>
       Real-time monitoring via RemotXY app.
     </td>
     <td align="center">
