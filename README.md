@@ -41,7 +41,7 @@ A simple IoT project to monitor plant soil moisture using a soil moisture sensor
 [![Watch video](images/video_thumbnail.jpg)](https://drive.google.com/file/d/1ijkmhDAPcP4Rh8S_PL73jiuvb1Kh7tLm/view?usp=sharing)
 
 
- <h2 align="center">Project Images</h2>
+<h2 align="center">Project Images</h2>
 
 <table align="center">
   <tr>
@@ -58,22 +58,6 @@ A simple IoT project to monitor plant soil moisture using a soil moisture sensor
     <td align="center">
       <strong>The NodeMCU</strong><br>
       <img src="images/The NodeMCU.png" width="180"><br>
-      Wi-Fi enabled microcontroller board.
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>Soil Moisture Sensor</strong><br>
-      <img src="images/Soil Moisture Sensor.png" width="180"><br>
-      Soil sensor connected to NodeMCU.
-    </td>
-    <td align="center">
-      <strong>Connects to RemoteXY</strong><br>
-      <img src="images/connects to RemoteXY.png" width="180"><br>
-      Real-time monitoring via RemotXY app.
-    </td>
-    <td align="center">
-    </td>
-  </tr>
-</table>
+      Wi-Fi enabled
+
 
